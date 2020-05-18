@@ -66,6 +66,7 @@ export default function Home() {
         }
         .links-contact {
           max-width: 800px;
+          font-weight: 500;
           display: grid;
           grid-template-columns: 4fr 1fr;
           justify-content: space-between;
@@ -75,17 +76,17 @@ export default function Home() {
           text-decoration: underline;
         }
         @media (max-width: 600px) {
-          font-size: 25px;
           .main-container {
-            padding: 12px;
+            font-size: 18px;
+            padding: 5px;
           }
-          .about {
-            margin-bottom: 8rem;
+          .header-container, .about {
+            margin-bottom: 5rem;
           }
         }
         @media (min-width: 800px) {
           .about {
-            margin-bottom: 8rem;
+            margin-bottom: 6rem;
           }
           .links-contact {
             display: block;
