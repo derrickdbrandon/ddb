@@ -54,7 +54,7 @@ export default function Home() {
           margin-bottom: 6rem;
         }
         .about {
-          margin-bottom: 6rem;
+          margin-bottom: 7rem;
         }
         .contact-links {
           max-width: 800px;
@@ -69,11 +69,6 @@ export default function Home() {
           .header-container,
           .about {
             margin-bottom: 4rem;
-          }
-        }
-        @media (min-width: 800px) {
-          .about {
-            margin-bottom: 6rem;
           }
         }
       `}</style>
