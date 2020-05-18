@@ -18,38 +18,30 @@ export default function Home() {
           <p>
             Currently working fulltime at{' '}
             <a href="https://www.justvanilla.com/">Vanilla</a>. I have full
-            stack experience, having worked with technologies such as React, Node,
-            Express, MongoDB, PostgreSQL, and various AWS services.
+            stack experience, having worked with technologies such as React,
+            Node, Express, MongoDB, PostgreSQL, and various AWS services.
           </p>
           <p>
             My interests outside of work include making music using Ableton,
             design, and cooking.
           </p>
         </div>
-        <div className="links-contact">
-          <div className="links">
-            <div className="links-header">Links</div>
-            <div>
-              <a href="https://github.com/derrickdbrandon">Github</a>
-            </div>
-            <div>
-              <Link href="/resume">
-                <a>Resume</a>
-              </Link>
-            </div>
+        <div className="contact-links">
+          <div>
+            <a className="email" href="mailto: derrickdbrandon@gmail.com">
+              Email
+            </a>
           </div>
-          <div className="contact">
-            <div className="contact-header">Contact</div>
-            <div>
-              <a className="email" href="mailto: derrickdbrandon@gmail.com">
-                Email
-              </a>
-            </div>
-            <div>
-              <a href="https://www.linkedin.com/in/derrickdbrandon/">
-                LinkedIn
-              </a>
-            </div>
+          <div>
+            <Link href="/resume">
+              <a>Resume</a>
+            </Link>
+          </div>
+          <div>
+            <a href="https://www.linkedin.com/in/derrickdbrandon/">LinkedIn</a>
+          </div>
+          <div>
+            <a href="https://github.com/derrickdbrandon">Github</a>
           </div>
         </div>
       </div>
@@ -62,37 +54,26 @@ export default function Home() {
           margin-bottom: 6rem;
         }
         .about {
-          margin-bottom: 11rem;
+          margin-bottom: 6rem;
         }
-        .links-contact {
+        .contact-links {
           max-width: 800px;
-          font-weight: 500;
-          display: grid;
-          grid-template-columns: 4fr 1fr;
-          justify-content: space-between;
-        }
-        .contact-header,
-        .links-header {
-          text-decoration: underline;
+          font-weight: 570;
+          display: block;
         }
         @media (max-width: 600px) {
           .main-container {
             font-size: 18px;
             padding: 5px;
           }
-          .header-container, .about {
-            margin-bottom: 5rem;
+          .header-container,
+          .about {
+            margin-bottom: 4rem;
           }
         }
         @media (min-width: 800px) {
           .about {
             margin-bottom: 6rem;
-          }
-          .links-contact {
-            display: block;
-          }
-          .links {
-            margin-bottom: 4rem;
           }
         }
       `}</style>
