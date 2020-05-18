@@ -18,7 +18,7 @@ export default function Home() {
           <p>
             Currently working fulltime at{' '}
             <a href="https://www.justvanilla.com/">Vanilla</a>. I have full
-            stack experience, having worked technologies such as React, Node,
+            stack experience, having worked with technologies such as React, Node,
             Express, MongoDB, PostgreSQL, and various AWS services.
           </p>
           <p>
