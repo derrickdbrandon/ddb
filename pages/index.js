@@ -6,6 +6,8 @@ export default function Home() {
     <div className="container">
       <Head>
         <title>Derrick D. Brandon</title>
+        <meta name="Derrick D. Brandon" content="Derrick D. Brandon" />
+        <meta name="Description" content="Derrick D. Brandon Software Engineer"></meta>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="main-container">
@@ -27,20 +29,18 @@ export default function Home() {
           </p>
         </div>
         <div className="contact-links">
-          <div>
-            <a className="email" href="mailto: derrickdbrandon@gmail.com">
-              Email
-            </a>
+          <div className="contact">
+            <a href="mailto: derrickdbrandon@gmail.com">Contact</a>
           </div>
-          <div>
+          <div className="resume">
             <Link href="/resume">
               <a>Resume</a>
             </Link>
           </div>
-          <div>
+          <div className="linkedin">
             <a href="https://www.linkedin.com/in/derrickdbrandon/">LinkedIn</a>
           </div>
-          <div>
+          <div className="github">
             <a href="https://github.com/derrickdbrandon">Github</a>
           </div>
         </div>
@@ -61,6 +61,12 @@ export default function Home() {
           font-weight: 570;
           display: block;
         }
+        .contact,
+        .resume,
+        .linkedin,
+        .github {
+          padding-bottom: 5px;
+        }
         @media (max-width: 600px) {
           .main-container {
             font-size: 18px;
@@ -69,6 +75,10 @@ export default function Home() {
           .header-container,
           .about {
             margin-bottom: 4rem;
+          }
+          .contact-links {
+            position: fixed;
+            bottom: 0;
           }
         }
       `}</style>
