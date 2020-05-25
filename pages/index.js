@@ -77,7 +77,6 @@ export default function Home() {
             margin-bottom: 4rem;
           }
           .contact-links {
-            position: fixed;
             bottom: 0;
           }
         }
