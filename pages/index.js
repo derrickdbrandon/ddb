@@ -7,7 +7,10 @@ export default function Home() {
       <Head>
         <title>Derrick D. Brandon</title>
         <meta name="Derrick D. Brandon" content="Derrick D. Brandon" />
-        <meta name="Description" content="Derrick D. Brandon Software Engineer"></meta>
+        <meta
+          name="Description"
+          content="Derrick D. Brandon Software Engineer"
+        ></meta>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="main-container">
@@ -72,12 +75,12 @@ export default function Home() {
             font-size: 18px;
             padding: 5px;
           }
-          .header-container,
-          .about {
-            margin-bottom: 4rem;
+          .header-container {
+            margin-bottom: 4.5rem;
           }
           .contact-links {
-            bottom: 0;
+            position: fixed;
+            bottom: 10px;
           }
         }
       `}</style>
