@@ -1,5 +1,5 @@
-import Head from 'next/head';
-import Link from 'next/link';
+import Head from "next/head";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -21,14 +21,15 @@ export default function Home() {
         </div>
         <div className="about">
           <p>
-            Currently working fulltime at{' '}
+            Currently full-time at{" "}
             <a href="https://www.justvanilla.com/">Vanilla</a>. I have full
-            stack experience, having worked with technologies such as React,
-            Node, Express, MongoDB, PostgreSQL, and various AWS services.
+            stack experience, having worked with technologies such as
+            TypeScript, React, Node, Express, GraphQL, MongoDB, and various AWS
+            services.
           </p>
           <p>
-            My interests outside of work include making music using Ableton,
-            design, and cooking.
+            My interests outside of work include discovering new music, making
+            beats in Ableton, design, and cooking.
           </p>
         </div>
         <div className="contact-links">
@@ -49,59 +50,12 @@ export default function Home() {
         </div>
       </div>
 
-      <style jsx>{`
-        .main-container {
-          padding: 15px;
-        }
-        .header-container {
-          margin-bottom: 6rem;
-        }
-        .about {
-          margin-bottom: 7rem;
-        }
-        .contact-links {
-          max-width: 800px;
-          font-weight: 570;
-          display: block;
-        }
-        .contact,
-        .resume,
-        .linkedin,
-        .github {
-          padding-bottom: 5px;
-        }
-        @media (max-width: 600px) {
-          .main-container {
-            font-size: 18px;
-            padding: 5px;
-          }
-          .header-container {
-            margin-bottom: 4.5rem;
-          }
-          .contact-links {
-            position: fixed;
-            bottom: 10px;
-          }
-        }
-      `}</style>
-
       <style jsx global>{`
         @font-face {
-          font-family: 'Libre Baskerville';
-          src: url('/fonts/Libre-Baskerville/LibreBaskerville-Regular.ttf');
+          font-family: "Libre Baskerville";
+          src: url("/fonts/Libre-Baskerville/LibreBaskerville-Regular.ttf");
           font-weight: 400;
           font-style: normal;
-        }
-        body {
-          padding: 0;
-          margin: 0;
-          font-family: 'Libre Baskerville', 'HND', 'Helvetica', Arial,
-            sans-serif;
-          font-size: 28px;
-          font-weight: 400;
-          line-height: 1.2;
-          text-rendering: optimizeLegibility;
-          -webkit-font-smoothing: antialiased;
         }
         a {
           text-decoration: none;
@@ -109,18 +63,33 @@ export default function Home() {
         }
         a:hover {
           text-decoration: underline;
+          text-decoration-style: dotted;
         }
         h1 {
           font-weight: 400;
           margin: 0;
         }
-
-        p {
-          max-width: 800px;
+        .main-container {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          height: calc(100vh - 20px);
+          max-width: 720px;
+          font-family: "Libre Baskerville", "HND", "Helvetica", Arial,
+            sans-serif;
+          font-size: 24px;
+          font-weight: 400;
+          line-height: 1.3;
+          text-rendering: optimizeLegibility;
+          -webkit-font-smoothing: antialiased;
         }
-
-        * {
-          box-sizing: border-box;
+        @media (max-width: 600px) {
+          .main-container {
+            font-size: 22px;
+          }
+          .header-container {
+            font-size: 16px;
+          }
         }
       `}</style>
     </div>
