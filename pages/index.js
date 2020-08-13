@@ -74,7 +74,7 @@ export default function Home() {
           flex-direction: column;
           justify-content: space-between;
           height: calc(100vh - 20px);
-          max-width: 720px;
+          max-width: 630px;
           font-family: "Libre Baskerville", "HND", "Helvetica", Arial,
             sans-serif;
           font-size: 24px;
