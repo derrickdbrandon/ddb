@@ -25,11 +25,8 @@ export default function Home() {
             <a href="https://www.justvanilla.com/">Vanilla</a>. I have full
             stack experience, having worked with technologies such as
             TypeScript, React, Node, Express, GraphQL, MongoDB, and various AWS
-            services.
-          </p>
-          <p>
-            My interests outside of work include discovering new music, making
-            beats in Ableton, design, and cooking.
+            services. Interests outside of work include discovering new
+            music, making beats in Ableton, design, and cooking.
           </p>
         </div>
         <div className="contact-links">
@@ -74,7 +71,6 @@ export default function Home() {
           flex-direction: column;
           justify-content: space-between;
           height: calc(100vh - 20px);
-          max-width: 630px;
           font-family: "Libre Baskerville", "HND", "Helvetica", Arial,
             sans-serif;
           font-size: 24px;
@@ -83,12 +79,21 @@ export default function Home() {
           text-rendering: optimizeLegibility;
           -webkit-font-smoothing: antialiased;
         }
+        .about {
+          font-size: 30px;
+          line-height: 34px;
+          max-width: 75%;
+        }
         @media (max-width: 600px) {
-          .main-container {
+          .main-container,
+          .about {
             font-size: 22px;
           }
           .header-container {
             font-size: 16px;
+          }
+          .about {
+            max-width: 100%;
           }
         }
       `}</style>
