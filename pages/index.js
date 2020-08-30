@@ -82,8 +82,7 @@ export default function Home() {
           font-family: "Libre Baskerville", "HND", "Helvetica", Arial,
             sans-serif;
           font-size: 24px;
-          font-weight: 400;
-          line-height: 1.3;
+          line-height: 1.4;
           text-rendering: optimizeLegibility;
           -webkit-font-smoothing: antialiased;
         }
@@ -92,11 +91,10 @@ export default function Home() {
           animation-name: fadeInOpacity;
           animation-iteration-count: 1;
           animation-timing-function: ease-in;
-          animation-duration: 0.25s;
+          animation-duration: 0.40s;
         }
         .about {
           font-size: 30px;
-          line-height: 34px;
           max-width: 75%;
           opacity: 1;
         }
@@ -105,7 +103,7 @@ export default function Home() {
           animation-name: fadeInOpacity;
           animation-iteration-count: 1;
           animation-timing-function: ease-in;
-          animation-duration: 0.5s;
+          animation-duration: 0.65s;
         }
         @media (max-width: 600px) {
           .main-container,
