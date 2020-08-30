@@ -25,8 +25,8 @@ export default function Home() {
             <a href="https://www.justvanilla.com/">Vanilla</a>. I have full
             stack experience, having worked with technologies such as
             TypeScript, React, Node, Express, GraphQL, MongoDB, and various AWS
-            services. Interests outside of work include discovering new
-            music, making beats in Ableton, design, and cooking.
+            services. Interests outside of work include discovering new music,
+            making beats in Ableton, design, and cooking.
           </p>
         </div>
         <div className="contact-links">
@@ -54,6 +54,14 @@ export default function Home() {
           font-weight: 400;
           font-style: normal;
         }
+        @keyframes fadeInOpacity {
+          0% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
         a {
           text-decoration: none;
           color: inherit;
@@ -79,10 +87,25 @@ export default function Home() {
           text-rendering: optimizeLegibility;
           -webkit-font-smoothing: antialiased;
         }
+        .header-container {
+          opacity: 1;
+          animation-name: fadeInOpacity;
+          animation-iteration-count: 1;
+          animation-timing-function: ease-in;
+          animation-duration: 0.25s;
+        }
         .about {
           font-size: 30px;
           line-height: 34px;
           max-width: 75%;
+          opacity: 1;
+        }
+        .about,
+        .contact-links {
+          animation-name: fadeInOpacity;
+          animation-iteration-count: 1;
+          animation-timing-function: ease-in;
+          animation-duration: 0.5s;
         }
         @media (max-width: 600px) {
           .main-container,
