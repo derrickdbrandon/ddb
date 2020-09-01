@@ -24,11 +24,9 @@ export default function Home() {
             Currently full-time at{" "}
             <a href="https://www.justvanilla.com/">Vanilla</a>. I have full
             stack experience, having worked with technologies such as
-            TypeScript, React, GraphQL, Node, MongoDB, and AWS.
-          </p>
-          <p>
-            Outside of work I enjoy discovering new music, making beats in
-            Ableton, design, and cooking.
+            TypeScript, React, GraphQL, Node, MongoDB, and AWS. Outside of work
+            I enjoy discovering new music, making beats in Ableton, design, and
+            cooking.
           </p>
         </div>
         <div className="footer">
@@ -127,16 +125,19 @@ export default function Home() {
         .contact-links {
           font-family: "Helvetica", Arial, sans-serif;
           font-size: 22px;
-          align-self: flex-end;
         }
         .logo {
-          height: 125px;
-          width: 125px;
+          height: 120px;
+          width: 120px;
         }
 
         @media (max-width: 830px) {
           .about {
             font-size: 28px;
+          }
+          .logo {
+            height: 100px;
+            width: 100px;
           }
         }
 
@@ -153,10 +154,6 @@ export default function Home() {
           }
           .contact-links {
             font-size: 20px;
-          }
-          .logo {
-            height: 100px;
-            width: 100px;
           }
         }
 
