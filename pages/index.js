@@ -114,7 +114,7 @@ export default function Home() {
         .about {
           font-size: 32px;
           max-width: 1180px;
-          margin: 0;
+          margin-bottom: 40px;
         }
         .footer {
           display: flex;
@@ -127,13 +127,14 @@ export default function Home() {
           font-size: 22px;
         }
         .logo {
-          height: 120px;
-          width: 120px;
+          height: 110px;
+          width: 110px;
         }
 
         @media (max-width: 830px) {
           .about {
             font-size: 28px;
+            margin: 0;
           }
           .logo {
             height: 100px;
