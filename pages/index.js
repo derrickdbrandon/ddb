@@ -24,15 +24,17 @@ export default function Home() {
             Currently full-time at{" "}
             <a href="https://www.justvanilla.com/">Vanilla</a>. I have full
             stack experience, having worked with technologies such as
-            TypeScript, React, Node, GraphQL, MongoDB, and various AWS services.
-            Interests outside of work include discovering new music, making
-            beats in Ableton, design, and cooking.
+            TypeScript, React, GraphQL, Node, MongoDB, and AWS.
+          </p>
+          <p>
+            Outside of work I enjoy discovering new music, making beats in
+            Ableton, design, and cooking.
           </p>
         </div>
         <div className="footer">
           <div className="contact-links">
             <div className="contact">
-              <a href="mailto: derrickdbrandon@gmail.com">Contact</a>
+              <a href="mailto: derrickdbrandon@gmail.com">Email</a>
             </div>
             <div className="resume">
               <Link href="/resume">
@@ -79,29 +81,42 @@ export default function Home() {
           font-weight: 400;
           margin: 0;
         }
+        p {
+          margin: 12px 0 12px 0;
+        }
         .main-container {
           display: flex;
           flex-direction: column;
           justify-content: space-between;
           height: calc(100vh - 20px);
-          font-family: "Libre Baskerville", "HND", "Helvetica", Arial,
-            sans-serif;
-          font-size: 24px;
-          line-height: 1.3;
           text-rendering: optimizeLegibility;
           -webkit-font-smoothing: antialiased;
         }
+        .header-container,
+        .about {
+          font-family: "Libre Baskerville", "HND", "Helvetica", Arial,
+            sans-serif;
+          line-height: 1.25;
+        }
         .header-container {
+          font-size: 24px;
           opacity: 1;
           animation-name: fadeInOpacity;
           animation-iteration-count: 1;
           animation-timing-function: ease-in;
-          animation-duration: 0.5s;
+          animation-duration: 0.75s;
+        }
+        .about,
+        .footer {
+          animation-name: fadeInOpacity;
+          animation-iteration-count: 1;
+          animation-timing-function: ease-in;
+          animation-duration: 1.25s;
         }
         .about {
-          font-size: 30px;
+          font-size: 32px;
           max-width: 1180px;
-          opacity: 1;
+          margin: 0;
         }
         .footer {
           display: flex;
@@ -109,24 +124,23 @@ export default function Home() {
           justify-content: space-between;
           align-items: center;
         }
+        .contact-links {
+          font-family: "Helvetica", Arial, sans-serif;
+          font-size: 22px;
+        }
         .logo {
           height: 125px;
           width: 125px;
         }
-        .logo:hover {
-          opacity: 0.5;
-        }
-        .about,
-        .contact-links,
-        .logo {
-          animation-name: fadeInOpacity;
-          animation-iteration-count: 1;
-          animation-timing-function: ease-in;
-          animation-duration: 1s;
+
+        @media (max-width: 830px) {
+          .about {
+            font-size: 28px;
+          }
         }
 
         @media (max-width: 600px) {
-          .main-container,
+          .header-container,
           .about {
             font-size: 22px;
           }
@@ -135,6 +149,9 @@ export default function Home() {
           }
           .about {
             max-width: 100%;
+          }
+          .contact-links {
+            font-size: 20px;
           }
           .logo {
             height: 100px;
@@ -147,9 +164,9 @@ export default function Home() {
             font-size: 12px;
           }
           .main-container,
-          .about {
+          .about,
+          .contact-links {
             font-size: 18px;
-            line-height: 1.4;
           }
         }
       `}</style>
