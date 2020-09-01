@@ -24,26 +24,31 @@ export default function Home() {
             Currently full-time at{" "}
             <a href="https://www.justvanilla.com/">Vanilla</a>. I have full
             stack experience, having worked with technologies such as
-            TypeScript, React, Node, Express, GraphQL, MongoDB, and various AWS
-            services. Interests outside of work include discovering new music,
-            making beats in Ableton, design, and cooking.
+            TypeScript, React, Node, GraphQL, MongoDB, and various AWS services.
+            Interests outside of work include discovering new music, making
+            beats in Ableton, design, and cooking.
           </p>
         </div>
-        <div className="contact-links">
-          <div className="contact">
-            <a href="mailto: derrickdbrandon@gmail.com">Contact</a>
+        <div className="footer">
+          <div className="contact-links">
+            <div className="contact">
+              <a href="mailto: derrickdbrandon@gmail.com">Contact</a>
+            </div>
+            <div className="resume">
+              <Link href="/resume">
+                <a>Resume</a>
+              </Link>
+            </div>
+            <div className="linkedin">
+              <a href="https://www.linkedin.com/in/derrickdbrandon/">
+                LinkedIn
+              </a>
+            </div>
+            <div className="github">
+              <a href="https://github.com/derrickdbrandon">Github</a>
+            </div>
           </div>
-          <div className="resume">
-            <Link href="/resume">
-              <a>Resume</a>
-            </Link>
-          </div>
-          <div className="linkedin">
-            <a href="https://www.linkedin.com/in/derrickdbrandon/">LinkedIn</a>
-          </div>
-          <div className="github">
-            <a href="https://github.com/derrickdbrandon">Github</a>
-          </div>
+          <img className="logo" alt="laptop" src="/favicon.ico" />
         </div>
       </div>
 
@@ -82,7 +87,7 @@ export default function Home() {
           font-family: "Libre Baskerville", "HND", "Helvetica", Arial,
             sans-serif;
           font-size: 24px;
-          line-height: 1.4;
+          line-height: 1.3;
           text-rendering: optimizeLegibility;
           -webkit-font-smoothing: antialiased;
         }
@@ -91,20 +96,35 @@ export default function Home() {
           animation-name: fadeInOpacity;
           animation-iteration-count: 1;
           animation-timing-function: ease-in;
-          animation-duration: 0.40s;
+          animation-duration: 0.5s;
         }
         .about {
           font-size: 30px;
-          max-width: 75%;
+          max-width: 1180px;
           opacity: 1;
         }
+        .footer {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+        }
+        .logo {
+          height: 125px;
+          width: 125px;
+        }
+        .logo:hover {
+          opacity: 0.5;
+        }
         .about,
-        .contact-links {
+        .contact-links,
+        .logo {
           animation-name: fadeInOpacity;
           animation-iteration-count: 1;
           animation-timing-function: ease-in;
-          animation-duration: 0.65s;
+          animation-duration: 1s;
         }
+
         @media (max-width: 600px) {
           .main-container,
           .about {
@@ -115,6 +135,21 @@ export default function Home() {
           }
           .about {
             max-width: 100%;
+          }
+          .logo {
+            height: 100px;
+            width: 100px;
+          }
+        }
+
+        @media (max-width: 320px) {
+          .header-container {
+            font-size: 12px;
+          }
+          .main-container,
+          .about {
+            font-size: 18px;
+            line-height: 1.4;
           }
         }
       `}</style>
