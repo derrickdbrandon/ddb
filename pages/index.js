@@ -127,6 +127,7 @@ export default function Home() {
         .contact-links {
           font-family: "Helvetica", Arial, sans-serif;
           font-size: 22px;
+          align-self: flex-end;
         }
         .logo {
           height: 125px;
