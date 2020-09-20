@@ -16,17 +16,17 @@ export default function Home() {
       <div className="main-container">
         <div className="header-container">
           <h1>Derrick D. Brandon</h1>
-          <h1>Software Engineer</h1>
+          <h1 className="title">Software Engineer</h1>
           <h1>Brooklyn, NY</h1>
         </div>
         <div className="about">
           <p>
             Currently full-time at{" "}
             <a href="https://www.justvanilla.com/">Vanilla</a>. I have full
-            stack experience, having worked with technologies such as
-            TypeScript, React, GraphQL, Node, MongoDB, and AWS. Outside of work
-            I enjoy discovering new music, making beats in Ableton, design, and
-            cooking.
+            stack experience web development experience, having worked with
+            technologies such as TypeScript, React, GraphQL, Node, MongoDB, and
+            AWS. Outside of work I enjoy discovering new music, making beats in
+            Ableton, and cooking.
           </p>
         </div>
         <div className="footer">
@@ -129,6 +129,26 @@ export default function Home() {
         .logo {
           height: 110px;
           width: 110px;
+        }
+
+        @media (min-width: 1180px) {
+          .header-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+          }
+
+          .title {
+            display: none;
+          }
+
+          .about {
+            align-self: center;
+            font-size: 28px;
+            text-align: center;
+            width: 875px;
+            margin-top: 50px;
+          }
         }
 
         @media (max-width: 830px) {
