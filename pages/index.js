@@ -147,7 +147,7 @@ export default function Home() {
             font-size: 28px;
             text-align: center;
             width: 875px;
-            margin-top: 50px;
+            margin-top: 20px;
           }
         }
 
