@@ -23,7 +23,7 @@ export default function Home() {
           <p>
             Currently full-time at{" "}
             <a href="https://www.justvanilla.com/">Vanilla</a>. I have full
-            stack experience web development experience, having worked with
+            stack web development experience, having worked with
             technologies such as TypeScript, React, GraphQL, Node, MongoDB, and
             AWS. Outside of work I enjoy discovering new music, making beats in
             Ableton, and cooking.
