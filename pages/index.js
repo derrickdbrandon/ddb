@@ -23,29 +23,24 @@ export default function Home() {
           <p>
             Currently full-time at{" "}
             <a href="https://www.justvanilla.com/">Vanilla</a>. I have full
-            stack web development experience, having worked with
-            technologies such as TypeScript, React, GraphQL, Node, MongoDB, and
-            AWS. Outside of work I enjoy discovering new music, making beats in
-            Ableton, and cooking.
+            stack web development experience, having worked with technologies
+            such as TypeScript, React, GraphQL, Node, MongoDB, and AWS. Outside
+            of work I enjoy discovering new music, making beats in Ableton, and
+            cooking.
           </p>
         </div>
         <div className="footer">
           <div className="contact-links">
-            <div className="contact">
-              <a href="mailto: derrickdbrandon@gmail.com">Email</a>
+            <div className="github">
+              <a href="https://github.com/derrickdbrandon">github</a>
             </div>
-            <div className="resume">
-              <Link href="/resume">
-                <a>Resume</a>
-              </Link>
+            <div className="are.na">
+              <a href="https://www.are.na/derrick-brandon">are.na</a>
             </div>
             <div className="linkedin">
               <a href="https://www.linkedin.com/in/derrickdbrandon/">
-                LinkedIn
+                linkedin
               </a>
-            </div>
-            <div className="github">
-              <a href="https://github.com/derrickdbrandon">Github</a>
             </div>
           </div>
           <img className="logo" alt="laptop" src="/favicon.ico" />
@@ -120,7 +115,7 @@ export default function Home() {
           display: flex;
           flex-direction: row;
           justify-content: space-between;
-          align-items: center;
+          align-items: flex-end;
         }
         .contact-links {
           font-family: "Helvetica", Arial, sans-serif;
@@ -175,6 +170,10 @@ export default function Home() {
           }
           .contact-links {
             font-size: 20px;
+          }
+          .logo {
+            height: 80px;
+            width: 80px;
           }
         }
 
