@@ -97,14 +97,14 @@ export default function Home() {
           animation-name: fadeInOpacity;
           animation-iteration-count: 1;
           animation-timing-function: ease-in;
-          animation-duration: 0.75s;
+          animation-duration: 0.25s;
         }
         .about,
         .footer {
           animation-name: fadeInOpacity;
           animation-iteration-count: 1;
           animation-timing-function: ease-in;
-          animation-duration: 1.25s;
+          animation-duration: 0.5s;
         }
         .about {
           font-size: 32px;
@@ -143,13 +143,13 @@ export default function Home() {
             text-align: center;
             width: 875px;
             margin-top: 20px;
+            text-align: justify;
           }
         }
 
         @media (max-width: 830px) {
           .about {
             font-size: 28px;
-            margin: 0;
           }
           .logo {
             height: 100px;
