@@ -1,15 +1,8 @@
 {
   "name": "ddb",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
-  },
-  "dependencies": {
-    "next": "9.4.0",
-    "react": "16.13.1",
-    "react-dom": "16.13.1"
-  }
+  "version": "2.0.0",
+  "main": "index.html",
+  "repository": "https://github.com/derrickdbrandon/ddb.git",
+  "author": "Derrick Brandon <derrickdbrandon@gmail.com>",
+  "license": "MIT"
 }
