@@ -23,23 +23,24 @@
         text-align: center;
       }
 
-      header {
+      h1,
+      h2 {
+        font-weight: normal;
+        line-height: 1em;
+        margin: 0 auto;
+      }
+
+      h1 {
         -moz-transition: all 0.4s;
         -webkit-transition: all 0.4s;
         -o-transition: all 0.4s;
         transition: all 0.4s;
       }
 
-      header:hover {
+      h1:hover {
         color: white;
+        cursor: pointer;
         text-shadow: 0 0 20px #fff;
-      }
-
-      h1,
-      h2 {
-        font-weight: normal;
-        line-height: 1em;
-        margin: 0 auto;
       }
 
       a {
@@ -92,10 +93,8 @@
     </style>
   </head>
   <body>
-    <header>
-      <h1>Derrick D. Brandon</h1>
-      <h2>Brooklyn, NY</h2>
-    </header>
+    <h1>Derrick D. Brandon</h1>
+    <h2>Brooklyn, NY</h2>
     <p>
       Fullstack developer currently full-time at
       <a href="https://www.justvanilla.com/">Vanilla</a>.
