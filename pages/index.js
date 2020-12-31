@@ -9,25 +9,27 @@ export default function Home() {
         <meta
           name="Description"
           content="Derrick D. Brandon Software Engineer"
-        ></meta>
-        <link rel="icon" href="/favicon.ico" />
+        />
+        <link rel="icon" href="/favicon.ico" type="image/ico" />
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
       </Head>
-      <body>
-        <h1>Derrick D. Brandon</h1>
-        <h2>Brooklyn, NY</h2>
+      <div className="grid-container">
+        <header>
+          <h1>Derrick D. Brandon</h1>
+          <h2>Brooklyn, NY</h2>
+        </header>
         <p>
           Fullstack developer currently full-time at{" "}
           <a href="https://www.justvanilla.com/">Vanilla</a>.
         </p>
-      </body>
-      <footer>
-        <small>
-          <a href="mailto:derrickdbrandon@gmail.com">email</a> /{" "}
-          <a href="https://github.com/derrickdbrandon">github</a> /{" "}
-          <a href="https://www.are.na/derrick-brandon">are.na</a>
-        </small>
-      </footer>
-
+        <footer>
+          <small>
+            <a href="mailto:derrickdbrandon@gmail.com">email</a> /{" "}
+            <a href="https://github.com/derrickdbrandon">github</a> /{" "}
+            <a href="https://www.are.na/derrick-brandon">are.na</a>
+          </small>
+        </footer>
+      </div>
       <style jsx global>{`
         @font-face {
           font-family: "AUTHENTICSans";
@@ -36,12 +38,23 @@ export default function Home() {
             url("fonts/AUTHENTIC-Sans.woff2"), format("woff2");
         }
 
+        html,
+        body,
+        div {
+          height: 100%;
+        }
+
+        .grid-container {
+          display: grid;
+          grid-auto-columns: auto auto auto;
+          grid-auto-rows: auto auto auto;
+        }
+
         body {
           background-color: #9f8f92;
-          font-family: "AUTHENTICSans", "Arial", sans-serif;
+          font-family: "AUTHENTICSans", Arial, sans-serif;
           font-size: 40px;
           text-align: center;
-          height: 100%;
         }
 
         h1,
@@ -78,20 +91,9 @@ export default function Home() {
           text-shadow: 0 0 20px #fff;
         }
 
-        p {
-          position: absolute;
-          left: 50%;
-          top: 44%;
-          -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-        }
-
         footer {
-          position: absolute;
-          bottom: 0;
-          left: 50%;
-          -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+          align-self: end;
+          margin-bottom: 8px;
         }
 
         @media only screen and (max-width: 630px) {
