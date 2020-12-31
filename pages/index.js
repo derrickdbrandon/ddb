@@ -41,6 +41,7 @@ export default function Home() {
           font-family: "AUTHENTICSans", "Arial", sans-serif;
           font-size: 40px;
           text-align: center;
+          height: 100%;
         }
 
         h1,
@@ -102,12 +103,6 @@ export default function Home() {
         @media only screen and (max-width: 495px) {
           body {
             font-size: 24px;
-          }
-        }
-
-        @media only screen and (max-width: 420px) {
-          body {
-            font-size: 18px;
           }
         }
       `}</style>
