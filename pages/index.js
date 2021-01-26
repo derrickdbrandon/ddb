@@ -41,7 +41,8 @@ export default function Home() {
         html,
         body,
         div {
-          height: 100%;
+          height: 100vh; /* Use vh as a fallback for browsers that do not support Custom Properties */
+          height: calc(var(--vh, 1vh) * 100);
         }
 
         .grid-container {
