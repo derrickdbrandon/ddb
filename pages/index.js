@@ -41,7 +41,7 @@ export default function Home() {
         html,
         body,
         div {
-          height: 80vh;
+          height: 100%;
         }
 
         .grid-container {
@@ -93,7 +93,7 @@ export default function Home() {
 
         footer {
           align-self: end;
-          margin-bottom: 8px;
+          margin-bottom: 24px;
         }
 
         @media only screen and (max-width: 630px) {
