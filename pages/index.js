@@ -93,7 +93,7 @@ export default function Home() {
 
         footer {
           align-self: end;
-          margin-bottom: 24px;
+          margin-bottom: 1.2rem;
         }
 
         @media only screen and (max-width: 630px) {
